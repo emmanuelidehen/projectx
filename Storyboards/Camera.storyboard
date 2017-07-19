@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G24b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VTM-8I-0eo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="UQx-4Z-QFP">
+            <objects>
+                <viewController id="VTM-8I-0eo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uuy-9p-nr7"/>
+                        <viewControllerLayoutGuide type="bottom" id="7jY-iW-D80"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hjk-nP-Eno">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nQR-xL-xHL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTu-5i-Ftu">
+                                <rect key="frame" x="313" y="28" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3y-xe-xDS">
+                                <rect key="frame" x="126" y="443" width="122" height="30"/>
+                                <state key="normal" title="Take Photo"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ig0-KK-QHv">
+                                <rect key="frame" x="107" y="516" width="161" height="30"/>
+                                <state key="normal" title="save in photo library "/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nQR-xL-xHL" firstAttribute="centerX" secondItem="S3y-xe-xDS" secondAttribute="centerX" id="Dh3-o0-yDJ"/>
+                            <constraint firstItem="nQR-xL-xHL" firstAttribute="centerX" secondItem="ig0-KK-QHv" secondAttribute="centerX" id="SyO-55-nT9"/>
+                            <constraint firstItem="nQR-xL-xHL" firstAttribute="top" secondItem="Hjk-nP-Eno" secondAttribute="top" id="byb-f2-NKy"/>
+                            <constraint firstItem="nQR-xL-xHL" firstAttribute="bottom" secondItem="7jY-iW-D80" secondAttribute="top" id="dTg-Jz-Ush"/>
+                            <constraint firstItem="nQR-xL-xHL" firstAttribute="leading" secondItem="Hjk-nP-Eno" secondAttribute="leading" id="s1s-5B-q55"/>
+                            <constraint firstAttribute="trailing" secondItem="nQR-xL-xHL" secondAttribute="trailing" id="sKW-Q7-tsL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dEz-t5-Qai" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.8" y="71.514242878560722"/>
+        </scene>
+    </scenes>
+</document>
