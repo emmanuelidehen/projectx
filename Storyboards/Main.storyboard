@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,47 +22,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bg3-KD-dgN">
-                                <rect key="frame" x="278" y="166" width="81" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleColor" red="0.24670912325382233" green="0.58173280954360962" blue="0.97259640693664551" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="savePhoto:" destination="KS9-JB-nG9" eventType="touchUpInside" id="ZI6-2j-VBX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLj-zi-erl">
-                                <rect key="frame" x="125" y="362" width="125" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Take Photo">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="takePhoto:" destination="KS9-JB-nG9" eventType="touchUpInside" id="5VN-7f-azw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NY7-0R-2pI">
-                                <rect key="frame" x="72" y="208" width="173" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Photo Library ">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="photoLibrary:" destination="KS9-JB-nG9" eventType="touchUpInside" id="EFE-FB-btY"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cc6-xp-IRw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tortoise" translatesAutoresizingMaskIntoConstraints="NO" id="cc6-xp-IRw">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="backgroundColor" red="1" green="0.99998784070000002" blue="0.99999213220000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="lI8-zT-Eiz">
+                                <rect key="frame" x="70" y="144" width="214" height="186"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bg3-KD-dgN">
+                                        <rect key="frame" x="0.0" y="0.0" width="108" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" red="1" green="0.99998784065246582" blue="0.99999213218688965" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="savePhoto:" destination="KS9-JB-nG9" eventType="touchUpInside" id="ZI6-2j-VBX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NY7-0R-2pI">
+                                        <rect key="frame" x="0.0" y="72" width="198" height="51"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="32"/>
+                                        <state key="normal" title="Photo Library ">
+                                            <color key="titleColor" red="1" green="0.99998784070000002" blue="0.99999213220000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="photoLibrary:" destination="KS9-JB-nG9" eventType="touchUpInside" id="EFE-FB-btY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLj-zi-erl">
+                                        <rect key="frame" x="0.0" y="123" width="214" height="63"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="42"/>
+                                        <state key="normal" title="Take Photo">
+                                            <color key="titleColor" red="1" green="0.99998784070000002" blue="0.99999213220000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="takePhoto:" destination="KS9-JB-nG9" eventType="touchUpInside" id="5VN-7f-azw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="cc6-xp-IRw" firstAttribute="leading" secondItem="WWA-uv-JqH" secondAttribute="leading" id="0Ug-mA-Rr5"/>
-                            <constraint firstItem="cc6-xp-IRw" firstAttribute="top" secondItem="WWA-uv-JqH" secondAttribute="top" id="QSW-SU-Ux2"/>
-                            <constraint firstAttribute="trailing" secondItem="cc6-xp-IRw" secondAttribute="trailing" id="WDJ-4m-qzb"/>
-                            <constraint firstItem="2SQ-Vm-2Kw" firstAttribute="top" secondItem="cc6-xp-IRw" secondAttribute="bottom" id="Zzo-4d-cfh"/>
+                            <constraint firstItem="cc6-xp-IRw" firstAttribute="bottom" secondItem="2SQ-Vm-2Kw" secondAttribute="top" id="W2Z-Og-KVO"/>
+                            <constraint firstItem="cc6-xp-IRw" firstAttribute="leading" secondItem="WWA-uv-JqH" secondAttribute="leading" id="Yf7-wX-h5a"/>
+                            <constraint firstItem="lI8-zT-Eiz" firstAttribute="top" secondItem="fJD-pi-2HG" secondAttribute="bottom" constant="80" id="ctg-bQ-Ltk"/>
+                            <constraint firstAttribute="trailing" secondItem="cc6-xp-IRw" secondAttribute="trailing" id="cvn-jV-iTV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lI8-zT-Eiz" secondAttribute="trailing" constant="75" id="jKT-w4-wkC"/>
+                            <constraint firstItem="cc6-xp-IRw" firstAttribute="top" secondItem="WWA-uv-JqH" secondAttribute="top" id="zqq-GG-fBN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dp3-y2-kcS"/>
@@ -92,4 +100,7 @@
             <point key="canvasLocation" x="349.60000000000002" y="50.824587706146929"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tortoise" width="481" height="640"/>
+    </resources>
 </document>

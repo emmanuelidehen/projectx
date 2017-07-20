@@ -34,17 +34,17 @@
                                 <state key="normal" title="save in photo library "/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTu-5i-Ftu">
-                                <rect key="frame" x="313" y="94" width="46" height="31"/>
+                                <rect key="frame" x="164" y="206" width="46" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="nQR-xL-xHL" firstAttribute="bottom" secondItem="7jY-iW-D80" secondAttribute="top" id="799-TI-agv"/>
                             <constraint firstItem="nQR-xL-xHL" firstAttribute="centerX" secondItem="S3y-xe-xDS" secondAttribute="centerX" id="Dh3-o0-yDJ"/>
                             <constraint firstItem="nQR-xL-xHL" firstAttribute="centerX" secondItem="ig0-KK-QHv" secondAttribute="centerX" id="SyO-55-nT9"/>
                             <constraint firstItem="nQR-xL-xHL" firstAttribute="top" secondItem="Hjk-nP-Eno" secondAttribute="top" id="byb-f2-NKy"/>
-                            <constraint firstItem="nQR-xL-xHL" firstAttribute="bottom" secondItem="7jY-iW-D80" secondAttribute="top" id="dTg-Jz-Ush"/>
                             <constraint firstItem="nQR-xL-xHL" firstAttribute="leading" secondItem="Hjk-nP-Eno" secondAttribute="leading" id="s1s-5B-q55"/>
                             <constraint firstAttribute="trailing" secondItem="nQR-xL-xHL" secondAttribute="trailing" id="sKW-Q7-tsL"/>
                         </constraints>
