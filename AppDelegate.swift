@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import AWSCore
 import AWSCognitoIdentityProvider
-
+import AWSCognito
 
 
 @UIApplicationMain
@@ -22,7 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         
-//        
+
+        
+         AWSLogger.default().logLevel = .verbose
+    
+        
 //        let credentialsProvider = AWSCognitoCredentialsProvider(
 //            regionType: CognitoRegionType,
 //            identityPoolId: CognitoIdentityPoolId)
