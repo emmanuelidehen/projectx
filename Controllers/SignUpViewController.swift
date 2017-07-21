@@ -15,7 +15,8 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var fullNameTextField: UITextField!
     
-    @IBOutlet weak var emailTextField: UITextField!
+    
+    @IBOutlet weak var emailTextfied: UITextField!
     
     
     @IBOutlet weak var passwordTextField: UITextField!
@@ -46,7 +47,7 @@ class SignUpViewController: UIViewController {
         
         
         // If there is text in the email textfield if not, return the function
-        guard let email = emailTextField.text, !email.isEmpty else {
+        guard let email = emailTextfied.text, !email.isEmpty else {
             return
         }
         // If there is text in the fullName if not, return the function

@@ -76,7 +76,7 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="emailTextField" destination="bxh-UH-gFX" id="nLk-5E-OSd"/>
+                        <outlet property="emailTextfied" destination="bxh-UH-gFX" id="hEB-nx-tRk"/>
                         <outlet property="fullNameTextField" destination="tc1-gE-xMK" id="5ow-68-LZi"/>
                         <outlet property="passwordTextField" destination="kfd-cW-mln" id="h0t-4t-09S"/>
                     </connections>
@@ -172,8 +172,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlightedImage="tortoise" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bY7-DQ-1dS">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xSB-cg-DgR">
-                                <rect key="frame" x="40" y="72" width="294" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xSB-cg-DgR">
+                                <rect key="frame" x="16" y="72" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>

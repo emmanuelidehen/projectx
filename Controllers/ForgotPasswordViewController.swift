@@ -31,8 +31,8 @@ class ForgotPasswordViewController: UIViewController {
     }
     
     @IBAction func sendResetLinkButtonPressed(_ sender: Any) {
-    }
-     activityIndicator.alpha = 1 // Make sure our activity indicator is visible
+    
+    activityIndicator.alpha = 1 // Make sure our activity indicator is visible
     activityIndicator.startAnimating() // Animate
     
     // If there is text in the email textfield if not, return the function
@@ -56,4 +56,5 @@ class ForgotPasswordViewController: UIViewController {
     alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
     }
     
+}
 }
