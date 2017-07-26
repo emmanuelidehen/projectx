@@ -9,6 +9,8 @@
 import UIKit
 import AVFoundation
 
+
+
 class Camera: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     @IBOutlet weak var myImg: UIImageView!
@@ -22,7 +24,7 @@ class Camera: UIViewController,UIImagePickerControllerDelegate, UINavigationCont
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    // Access photo library 
     @IBAction func photoLibrary(_ sender: Any) {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary) {
             let imagePicker = UIImagePickerController()
@@ -34,7 +36,7 @@ class Camera: UIViewController,UIImagePickerControllerDelegate, UINavigationCont
     }
     
     
-    
+    // Save Photo button
     @IBAction func savePhoto(_ sender: Any) {
         
         let imageData = UIImagePNGRepresentation(myImg.image!)
@@ -48,7 +50,7 @@ class Camera: UIViewController,UIImagePickerControllerDelegate, UINavigationCont
 
         
     }
-    
+    //Take Photo Button
     @IBAction func takePhoto(_ sender: Any) {
         
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {

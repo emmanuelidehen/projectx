@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 
         
-         AWSLogger.default().logLevel = .verbose
+      //   AWSLogger.default().logLevel = .verbose
     
         
 //        let credentialsProvider = AWSCognitoCredentialsProvider(

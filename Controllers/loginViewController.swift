@@ -28,9 +28,6 @@ class loginViewController: UIViewController {
     
 
     @IBAction func loginButtonPressed(_ sender: Any) {
-        
-        
-        
         // If there is text in the email textfield if not, return the function
         guard let email = emailTextField.text, !email.isEmpty else {
             return

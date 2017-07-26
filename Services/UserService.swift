@@ -20,7 +20,7 @@ struct UserService {
             
             // If there is an error
             if error != nil {
-                print("ERROR SIGNING UP")
+                print(error?.localizedDescription)
                 return
             }
             
@@ -58,7 +58,7 @@ struct UserService {
             
             // If there is an error
             if error != nil{
-                print("ERROR LOGGING IN")
+                print(error?.localizedDescription)
                 return
             }
             completion()
