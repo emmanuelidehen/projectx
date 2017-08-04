@@ -35,7 +35,7 @@
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Acess Photos</string>
 	<key>UIMainStoryboardFile</key>
-	<string>loginStoryboard</string>
+	<string>Main</string>
 	<key>UIRequiresPersistentWiFi</key>
 	<false/>
 	<key>UISupportedInterfaceOrientations</key>

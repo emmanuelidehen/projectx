@@ -32,9 +32,15 @@ class Camera: UIViewController,UIImagePickerControllerDelegate, UINavigationCont
             imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
             imagePicker.allowsEditing = true
             self.present(imagePicker, animated: true, completion: nil)
+            
+            
         }
+        
+        
+        
+        
+        
     }
-    
     
     // Save Photo button
     @IBAction func savePhoto(_ sender: Any) {
@@ -60,8 +66,7 @@ class Camera: UIViewController,UIImagePickerControllerDelegate, UINavigationCont
             imagePicker.allowsEditing = false
             self.present(imagePicker, animated: true, completion: nil)
         }
-        
-        
+       
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -71,10 +76,25 @@ class Camera: UIViewController,UIImagePickerControllerDelegate, UINavigationCont
         }
         picker.dismiss(animated: true, completion: nil)
     }
-        
-    }
     
-
-
+    
+    }
+/*
+    
+extension UIImage {
+    func fixOrientation() -> UIImage {
+        if self.imageOrientation == UIImageOrientation.up {
+            return self
+        }
+        UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
+        self.draw(in: CGRect(x: 0, y: 0, width: self.size.width, height: self.size.height))
+        if let normalizedImage: UIImage = UIGraphicsGetImageFromCurrentImageContext() {
+            UIGraphicsEndImageContext()
+            return normalizedImage
+        } else {
+            return self
+        }
+}
+*/
 
 

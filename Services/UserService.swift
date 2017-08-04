@@ -20,7 +20,7 @@ struct UserService {
             
             // If there is an error
             if error != nil {
-                print(error?.localizedDescription)
+                 print(error?.localizedDescription)
                 return
             }
             
